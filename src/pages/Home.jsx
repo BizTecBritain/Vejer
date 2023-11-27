@@ -7,8 +7,8 @@ export default function Home() {
 
     const col1 = [(
         <div className="surface">
-            <p className="card-title">Facebook Followers</p>
-            <p className="card-content">1.1k+</p>
+            <p className="card-title">Official Website</p>
+            <button className="card-button" onClick={() => window.open('http://www.vejerdelafrontera.es/','_blank')}>Click here</button>
         </div>
         ),
         (
@@ -48,12 +48,6 @@ export default function Home() {
         )];
     
     const col3 = [(
-        <div className="surface">
-            <p className="card-title">Official Website</p>
-            <button className="card-button" onClick={() => window.open('http://www.vejerdelafrontera.es/','_blank')}>Click here</button>
-        </div>
-        ),
-        (
         <div className="surface">
             <p className="card-title">Nickname</p>
             <p className="card-content" style={{fontSize: "40px"}}>The Olives' Town</p>
