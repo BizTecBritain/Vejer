@@ -11,10 +11,10 @@ import ScrollToTop from "./pages/widgets/ScrollToTop"
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Vejer">
       <ScrollToTop />
       <Routes>
-        <Route path="/Vejer/" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/asador-de-paco" element={<AsadorDePaco />} />
           <Route path="/beaches" element={<Beaches />} />
