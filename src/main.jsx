@@ -14,7 +14,7 @@ export default function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/Vejer/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/asador-de-paco" element={<AsadorDePaco />} />
           <Route path="/beaches" element={<Beaches />} />
