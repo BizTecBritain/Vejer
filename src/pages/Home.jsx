@@ -6,74 +6,74 @@ export default function Home() {
     const text = ["Main square in Vejer (Plaza España)", "Town Hall", "Drone shot of the town", "Old castle in the old town", "Statue and woman wearing the traditional dress called a Cobijada", "View of the front of the church"]
 
     const col1 = [(
-        <div className="surface">
+        <div className="surface" key={0}>
             <p className="card-title">Official Website</p>
             <button className="card-button" onClick={() => window.open('http://www.vejerdelafrontera.es/','_blank')}>Click here</button>
         </div>
         ),
         (
-        <div className="surface">
+        <div className="surface" key={1}>
             <p className="card-title">Vejer Rating</p>
             <p className="card-content" style={{paddingBottom: "10px"}}>4.5/5</p>
             <div style={{fontSize: "30px", paddingLeft: "20px", paddingBottom: "10px"}}>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star-half-o checked"></span>
+                <span className="fa fa-star checked"></span>
+                <span className="fa fa-star checked"></span>
+                <span className="fa fa-star checked"></span>
+                <span className="fa fa-star checked"></span>
+                <span className="fa fa-star-half-o checked"></span>
             </div>
             <p className="card-title" style={{paddingTop: "0px"}}>According to TripAdvisor</p>
         </div>
         )];
     
     const col2 = [(
-        <div className="surface">
+        <div className="surface" key={2}>
             <p className="card-title">Vejer Rating</p>
             <p className="card-content" style={{paddingBottom: "10px"}}>5/5</p>
             <div style={{fontSize: "30px", paddingLeft: "20px", paddingBottom: "10px"}}>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
+                <span className="fa fa-star checked"></span>
+                <span className="fa fa-star checked"></span>
+                <span className="fa fa-star checked"></span>
+                <span className="fa fa-star checked"></span>
+                <span className="fa fa-star checked"></span>
             </div>
             <p className="card-title" style={{paddingTop: "0px"}}>Rated by me</p>
         </div>
         ),
         (
-        <div className="surface">
+        <div className="surface" key={3}>
             <p className="card-title">Mayor</p>
             <p className="card-content" style={{fontSize: "40px"}}>José Ortíz Galván</p>
         </div>
         )];
     
     const col3 = [(
-        <div className="surface">
+        <div className="surface" key={4}>
             <p className="card-title">Nickname</p>
             <p className="card-content" style={{fontSize: "40px"}}>The Olives' Town</p>
         </div>
         ),
         (
-        <div className="surface">
+        <div className="surface" key={5}>
             <p className="card-title">Municipality</p>
             <p className="card-content">Cádiz</p>
         </div>
         )];
 
     const col4 = [(
-        <div className="surface">
+        <div className="surface" key={6}>
             <p className="card-title">Italian Sister City</p>
             <button className="card-button" onClick={() => window.open('https://en.wikipedia.org/wiki/Ostuni','_blank')}>Ostuni</button>
         </div>
         ),
         (
-        <div className="surface">
+        <div className="surface" key={7}>
             <p className="card-title">Morrocan Sister City</p>
             <button className="card-button" onClick={() => window.open('https://en.wikipedia.org/wiki/Chefchaouen','_blank')}>Chefchaouen</button>
         </div>
         ),
         (
-        <div className="surface">
+        <div className="surface" key={8}>
             <p className="card-title">French Sister City</p>
             <button className="card-button" onClick={() => window.open('https://en.wikipedia.org/wiki/Amboise','_blank')}>Amboise</button>
         </div>

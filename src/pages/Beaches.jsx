@@ -6,40 +6,40 @@ export default function Beaches() {
     const text = ["Los Caños de Meca is known for kite-surfing", "El Palmar de Vejer is a quiet beach for surfers", "Zahora is surrounded by forests - an unspoiled spot of nature", "Conil de la Frontera is also a town with amazing tapas bars", "Zahara de los Atunes is over 6km long so it is rarely busy", "Bolonia has Spains largest sand dune and is next to some must-see Roman ruins"]
 
     const col1 = [(
-        <div className="surface">
+        <div className="surface" key={0}>
             <p className="card-title">Los Caños de Meca (15 minutes)</p>
             <p className="card-content" style={{fontSize: "32px"}}>Beside the lighthouse of Trafalgar (and facing the spot of Nelson's famous victory), Los Caños de Meca is famed for its kitesurfing. Surrounded by forested hills, it also offers great walks. After you've spent some time relaxing on its wide golden sands, we'd suggest you sit in the shade of Bar Ohana's grass umbrellas, sipping drinks, eating great, inexpensive seafood and watching a blaze of colour fill the sky as kitesurfers skim the water and perform amazing acrobatics.</p>
         </div>
         ),
         (
-        <div className="surface">
+        <div className="surface" key={1}>
             <p className="card-title">El Palmar de Vejer (15 minutes)</p>
             <p className="card-content" style={{fontSize: "32px"}}>There are no large hotels in El Palmar. Instead, you'll find miles of soft, golden beaches, a relaxed vibe, and low-key, friendly restaurants and bars. Spend your day surfing or learning to surf at one of the many shore-front surf schools facing the beach. Stay for sundowners and enjoy live music and DJs at many of the bars in the summer months.</p>
         </div>
         )];
     
     const col2 = [(
-        <div className="surface">
+        <div className="surface" key={2}>
             <p className="card-title">Zahora (15 minutes)</p>
             <p className="card-content" style={{fontSize: "32px"}}>This is an unspoilt beach at the edge of the Parque Natural del Acantilado surrounded by forests. Zahora beach is well known for its great bars and restaurants, often offering live music in the summer evenings. This is a great spot to spend the day. And when the sun begins to set, experience the famous phenomenon, the Rayo Verde (green flash) lighting up the sky.</p>
         </div>
         ),
         (
-        <div className="surface">
+        <div className="surface" key={3}>
             <p className="card-title">Conil de la Frontera (20 minutes)</p>
             <p className="card-content" style={{fontSize: "32px"}}>A small yet lively beach town. In summer, Conil's seafront is lined with 'pop up' tapas bars and restaurants called 'Chiringuitos' which are built on the sand and are well worth a visit. The beaches are wide and go on forever and you can spend the day relaxing in the sun, or for a change of scene, you can walk into the old town.</p>
         </div>
         )];
     
     const col3 = [(
-        <div className="surface">
+        <div className="surface" key={4}>
             <p className="card-title">Zahara de los Atunes (30 minutes)</p>
             <p className="card-content" style={{fontSize: "32px"}}>Because of its sheer size of this blue flag beach, Zahara de los Atunes is never over-crowded, even during summer. Stretching more than six kilometres, and backed by low cliffs it is perfect for families. A popular spot for swimming and snorkelling, windsurfing and sailing, there are natural pools to explore, a fort and a sunken wreck visible at low tide. Famous for their tuna,  bars and restaurants line the beach </p>
         </div>
         )];
 
     const col4 = [(
-        <div className="surface">
+        <div className="surface" key={5}>
             <p className="card-title">Bolonia (45 minutes)</p>
             <p className="card-content" style={{fontSize: "32px"}}>A stunning beach on the edge of El Estrecho natural park overlooking the 'Gran Duna', Spain's largest sand dune, which if you are feeling brave, you can surf down from. The beach is not developed except for a couple of pop-up restaurants during the summer. What makes Bolonia extra special is the Baelo Claudia archaeological site, a must-see, beautifully preserved Roman town, only a three-minute drive away.</p>
         </div>

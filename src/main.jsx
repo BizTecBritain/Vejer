@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import AsadorDePaco from "./pages/AsadorDePaco";
@@ -11,7 +11,7 @@ import ScrollToTop from "./pages/widgets/ScrollToTop"
 
 export default function App() {
   return (
-    <BrowserRouter basename="/Vejer">
+    <HashRouter >
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -23,7 +23,7 @@ export default function App() {
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
